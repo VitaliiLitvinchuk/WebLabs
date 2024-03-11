@@ -54,8 +54,12 @@
     text-wrap: nowrap;
 }
 
+.table-content table tr {
+    border-bottom: 2px solid lightgray;
+}
+
 tbody tr:nth-child(2n) {
-    background-color: aliceblue;
+    background-color: ghostwhite;
 }
 
 tbody tr:hover {

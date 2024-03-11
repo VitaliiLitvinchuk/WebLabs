@@ -50,14 +50,14 @@ export const Lab5Table = () => {
                 </div>
                 <table>
                     <thead>
-                        <tr>
-                            <th className="text-light-gray">Name</th>
-                            <th className="text-light-gray">Conf. Home <br /> Owner</th>
-                            <th className="text-light-gray">Mobile Phone</th>
-                            <th className="text-light-gray">Home Phone</th>
-                            <th className="text-light-gray">Email Address</th>
-                            <th className="text-light-gray">Language</th>
-                            <th className="text-light-gray">Race</th>
+                        <tr className="text-light-gray">
+                            <th>Name</th>
+                            <th>Conf. Home <br /> Owner</th>
+                            <th>Mobile Phone</th>
+                            <th>Home Phone</th>
+                            <th>Email Address</th>
+                            <th>Language</th>
+                            <th>Race</th>
                         </tr>
                     </thead>
                     <tbody>
