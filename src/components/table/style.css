@@ -1,0 +1,68 @@
+.table-icon {
+    color: yellowgreen
+}
+
+.text-light-gray {
+    color: slategray;
+}
+
+.text-red {
+    color: red;
+}
+
+.icon-close {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.cust-container {
+    display: flex;
+    overflow-x: auto;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 10%;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px black;
+}
+
+.table-content {
+    padding: 0 40px 40px 40px;
+}
+
+.func-icons {
+    display: flex;
+    justify-content: end;
+}
+
+.func-icons div span {
+    margin: auto 10px
+}
+
+.table-content table {
+    margin-top: 20px;
+    width: 100%;
+    min-width: 900px;
+    text-align: left;
+}
+
+.table-content table td {
+    padding: 10px 10px 10px 0;
+    max-width: 150px;
+    overflow-x: auto;
+    text-wrap: nowrap;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: aliceblue;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+.centered-icons {
+    display: flex;
+
+}
