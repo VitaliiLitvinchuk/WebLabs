@@ -48,33 +48,35 @@ export const Lab5Table = () => {
                         <span className="text-light-gray">Export</span>
                     </div>
                 </div>
-                <table>
-                    <thead>
-                        <tr className="text-light-gray">
-                            <th>Name</th>
-                            <th>Conf. Home <br /> Owner</th>
-                            <th>Mobile Phone</th>
-                            <th>Home Phone</th>
-                            <th>Email Address</th>
-                            <th>Language</th>
-                            <th>Race</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            people.map(val =>
-                                <tr>
-                                    <td>{val.name}</td>
-                                    <td>{val.confirmedHomeOwner ? "Yes" : "No"}</td>
-                                    <td className={classNames(val.validPhone && "text-red")}>{val.mobilePhone}</td>
-                                    <td className="text-light-gray">{val.homePhone} &#160;<i className="fa fa-plus table-icon"></i></td>
-                                    <td className="text-light-gray">{val.email} &#160;<i className="fa fa-plus table-icon"></i></td>
-                                    <td>{val.language}</td>
-                                    <td>{val.race || "Unknown"}</td>
-                                </tr>)
-                        }
-                    </tbody>
-                </table>
+                <div className="ow-auto">
+                    <table>
+                        <thead>
+                            <tr className="text-light-gray">
+                                <th>Name</th>
+                                <th>Conf. Home <br /> Owner</th>
+                                <th>Mobile Phone</th>
+                                <th>Home Phone</th>
+                                <th>Email Address</th>
+                                <th>Language</th>
+                                <th>Race</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                people.map(val =>
+                                    <tr>
+                                        <td>{val.name}</td>
+                                        <td>{val.confirmedHomeOwner ? "Yes" : "No"}</td>
+                                        <td className={classNames(val.validPhone && "text-red")}>{val.mobilePhone}</td>
+                                        <td className="text-light-gray">{val.homePhone} &#160;<i className="fa fa-plus table-icon"></i></td>
+                                        <td className="text-light-gray">{val.email} &#160;<i className="fa fa-plus table-icon"></i></td>
+                                        <td>{val.language}</td>
+                                        <td>{val.race || "Unknown"}</td>
+                                    </tr>)
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     )
