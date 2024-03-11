@@ -67,8 +67,8 @@ export const Lab5Table = () => {
                                     <td>{val.name}</td>
                                     <td>{val.confirmedHomeOwner ? "Yes" : "No"}</td>
                                     <td className={classNames(val.validPhone && "text-red")}>{val.mobilePhone}</td>
-                                    <td>{val.homePhone} &#160;<i className="fa fa-plus table-icon"></i></td>
-                                    <td>{val.email} &#160;<i className="fa fa-plus table-icon"></i></td>
+                                    <td className="text-light-gray">{val.homePhone} &#160;<i className="fa fa-plus table-icon"></i></td>
+                                    <td className="text-light-gray">{val.email} &#160;<i className="fa fa-plus table-icon"></i></td>
                                     <td>{val.language}</td>
                                     <td>{val.race || "Unknown"}</td>
                                 </tr>)

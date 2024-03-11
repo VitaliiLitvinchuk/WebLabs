@@ -55,6 +55,7 @@
 }
 
 .table-content table tr {
+    font-weight: 500;
     border-bottom: 2px solid lightgray;
 }
 
@@ -68,5 +69,4 @@ tbody tr:hover {
 
 .centered-icons {
     display: flex;
-
 }
