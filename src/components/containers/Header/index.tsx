@@ -10,7 +10,7 @@ const Header = () => {
                     <Nav className="me-auto">
                         <NavDropdown title="Лаб 5">
                             <NavDropdown.Item>
-                                <Link className="nav-link" to="/lab5table">Лаб 5 Таблиця</Link>
+                                <Link className="nav-link" to="/lab5table">Таблиця</Link>
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
