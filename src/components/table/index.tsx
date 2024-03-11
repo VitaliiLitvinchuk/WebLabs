@@ -16,7 +16,7 @@ const addToPeople = () => {
         validPhone: Math.random() > 0.5
     });
     people.push({
-        name: "Dominic Torreto",
+        name: "Dominic Toretto",
         confirmedHomeOwner: false,
         mobilePhone: "(367) 602-7186",
         homePhone: "(979) 307-9402",
