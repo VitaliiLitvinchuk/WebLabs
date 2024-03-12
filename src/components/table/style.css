@@ -13,6 +13,7 @@
 .icon-close {
     margin-right: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .cust-container {
@@ -38,6 +39,7 @@
 .func-icons {
     display: flex;
     justify-content: end;
+    gap: 20px;
 }
 
 .func-icons div span {
@@ -73,4 +75,12 @@ tbody tr:hover {
 
 .centered-icons {
     display: flex;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
 }
