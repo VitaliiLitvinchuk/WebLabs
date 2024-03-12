@@ -6,7 +6,7 @@ const people: ISkipTrace[] = [];
 
 const addToPeople = () => {
     people.push({
-        name: "Barry Parker",
+        name: "Peter Parker",
         confirmedHomeOwner: true,
         mobilePhone: "(224) 614-9985",
         homePhone: "(588) 900-2137",
