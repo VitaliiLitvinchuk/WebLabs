@@ -1,19 +1,25 @@
-import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
 import './App.css';
 import Layout from './components/containers/Layout';
-import Lab5Table from './components/table';
-import HomePage from './components/home-page';
+import rootPath, { routes } from './routes';
 
 const App = () => {
   return (
     <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/lab5table' element={<Lab5Table />} />
+      <Route path={rootPath} element={<Layout />}>
+        {
+          routes.map(x =>
+            <>
+              {x.component && <Route path={x.path} element={x.component} />}
+              {x.nested && x.nested.map(x => <Route path={x.path} element={x.component} />)}
+            </>
+          )
+        }
+        {/* <Route path={rootPath} element={<HomePage />} /> */}
+        {/* <Route path={`${rootPath}/lab5table`} element={<Lab5Table />} /> */}
       </Route>
-      <Route path='*' element={<Navigate to="/" />} />
+      <Route path='*' element={<Navigate to={rootPath} />} />
     </Routes>
   );
 }
