@@ -50,7 +50,7 @@ export const Lab5Table = () => {
             <div className="func-icons" onClick={() => SetShowContent(!showContent)}>
                 <i className="fa fa-close text-light-gray icon-close clickable" ></i>
             </div>
-            <div className={classNames("table-content", showContent && "display-none")}>
+            <div className={classNames("table-content", !showContent && "display-none")}>
                 <h2><b>Skiptrace Detail</b></h2>
                 <div className="func-icons">
                     <div className="centered-icons clickable" onClick={() => SetShowTableRows(!showTableRows)}>

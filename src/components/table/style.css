@@ -53,11 +53,14 @@
     text-align: left;
 }
 
-.table-content table td {
-    padding: 10px 10px 10px 0;
-    max-width: 150px;
+.table-content table tr td {
+    padding: 10px;
     overflow-x: auto;
     text-wrap: nowrap;
+}
+
+.table-content table tr th {
+    padding-left: 10px;
 }
 
 .table-content table tr {
