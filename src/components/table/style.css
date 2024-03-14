@@ -68,11 +68,11 @@
     border-bottom: 2px solid lightgray;
 }
 
-tbody tr:nth-child(2n) {
+.table-content tbody tr:nth-child(2n) {
     background-color: ghostwhite;
 }
 
-tbody tr:hover {
+.table-content tbody tr:hover {
     background-color: lightgray;
 }
 

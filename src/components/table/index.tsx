@@ -4,7 +4,7 @@ import { ISkipTrace } from "./types";
 import { useRef, useState } from "react";
 import { useDownloadExcel } from "react-export-table-to-excel";
 
-const people: ISkipTrace[] = [];
+export const people: ISkipTrace[] = [];
 
 const addToPeople = () => {
     people.push({
@@ -51,7 +51,7 @@ export const Lab5Table = () => {
                 <i className="fa fa-close text-light-gray icon-close clickable" ></i>
             </div>
             <div className={classNames("table-content", !showContent && "display-none")}>
-                <h2><b>Skiptrace Detail</b></h2>
+                <h2 style={{ fontSize: "32px" }}><b>Skiptrace Detail</b></h2>
                 <div className="func-icons">
                     <div className="centered-icons clickable" onClick={() => SetShowTableRows(!showTableRows)}>
                         <i className={classNames("fa fa-2x", showTableRows ? "table-icon fa-check-square" : "text-red fa-close")}></i>

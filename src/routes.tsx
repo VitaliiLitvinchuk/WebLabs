@@ -1,5 +1,6 @@
 import HomePage from "./components/home-page";
 import Lab5Table from "./components/table";
+import Lab6Table from "./components/tailwind-table";
 
 const rootPath = "/WebLabs";
 
@@ -29,7 +30,20 @@ export const routes: IRouteEndpoint[] = [
                 nested: null,
             },
         ]
-    }
+    },
+    {
+        path: `${rootPath}/lab6`,
+        component: null,
+        name: "Лаб 6",
+        nested: [
+            {
+                path: `${rootPath}/lab6/table`,
+                component: <Lab6Table />,
+                name: "Таблиця",
+                nested: null,
+            },
+        ]
+    },
 ]
 
 export default rootPath; 
